@@ -1,5 +1,5 @@
 # CDXWriter
- This is a FIRSTDRAFT Starter Pack, which allows you to create your first drafts for technical documentation. Chat with the agents and create your custom content, locally. 
+ This is a FIRSTDRAFT Starter Pack, which allows you to create your first drafts for technical documentation. Chat with the Codex agents in Visual Studio Code locally, and create your custom content. 
 ## What you can do
 Create first drafts using source documents such as PRD, SFS, or notes that you have for a product feature, or review content and update agent review recommendations.  This is an authoring workspace that contains guidelines such a Cisco CTWG, Magnetic guidelines and any guidelines that you can add. This workspace contains a Writer and Reviewer agent. You can use Writer and Reviewer agents to create first drafts from uploaded Source materials, apply Templates and Guidelines, and produce reports and insights.
 You can also use the Reviewer agent to review any draft content against a set of available guidelines. The agent suggests recommendations for you to fix with the help of the agent, and also provides an insights and report.
