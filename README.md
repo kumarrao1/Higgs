@@ -21,13 +21,18 @@ You can also use the Reviewer agent to review any draft content against a set of
 
 ## Get Started - Prerequisites
 1. Download the FIRSTDRAFT.zip folder and unzip it.  Your workspace is ready and set up.
-2. Include your files in the relevant folders - Source, Reference, Guidelines, Templates.  Retain existing files in Guidelines and Templates and add new files to them. Do not alter or delete any workspace system files (md, txt). 
-3. Install VSCode and add extension Codex on your local machine by using prompts provided in the folder - readme.md  They are also listed here:
+2. Include your files in the relevant folders - Source, Reference, Guidelines, Templates.  Retain existing files in Guidelines and Templates and add new files to them. Do not alter or delete any workspace system files (md, txt).  Add your PRD, SFS, or source content file (PDF/PPT/Word) to this folder. Add any reference document to the Reference folder, this would typically be your User/Installation Guide, which you want the agent to refer to. If you have a specific template that you want to use, so that the agent can adopt that structure, include those docs in the Templates folder. Note, that good inputs gives great results, so try to include documents with sufficient content depth and context.
+3. Install VSCode and add extension Codex on your local machine by using prompts provided in the folder - readme.md  They are also listed here.
   Quick Install:
-   - Windows (PowerShell): `Invoke-WebRequest -Uri "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user" -OutFile "$env:TEMP\\VSCodeSetup.exe"; Start-Process -FilePath "$env:TEMP\\VSCodeSetup.exe" -ArgumentList "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART" -Wait; "$env:LOCALAPPDATA\\Programs\\Microsoft VS Code\\bin\\code" --install-extension openai.chatgpt`
-  - macOS (Homebrew): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; brew install --cask visual-studio-code; code --install-extension openai.chatgpt`
-  - macOS (no Homebrew): `curl -L "https://update.code.visualstudio.com/latest/darwin-universal/stable" -o /tmp/vscode.zip && sudo unzip -q /tmp/vscode.zip -d /Applications && "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" --install-extension openai.chatgpt`
-  - Linux (Debian/Ubuntu): `curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -o /tmp/vscode.deb && sudo dpkg -i /tmp/vscode.deb; code --install-extension openai.chatgpt`
+For Windows (PowerShell): $installer="$env:TEMP\VSCodeSetup.exe"; Invoke-WebRequest -Uri "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user" -OutFile $installer; Start-Process -FilePath $installer -ArgumentList "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /MERGETASKS=!runcode" -Wait; $code="$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd"; & $code --install-extension openai.chatgpt
+
+For macOS (Homebrew): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; brew install --cask visual-studio-code; code --install-extension openai.chatgpt`
+ 
+For macOS (no Homebrew): `curl -L "https://update.code.visualstudio.com/latest/darwin-universal/stable" -o /tmp/vscode.zip && sudo unzip -q /tmp/vscode.zip -d /Applications && "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" --install-extension openai.chatgpt`
+ 
+For Linux (Debian/Ubuntu): `curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -o /tmp/vscode.deb && sudo dpkg -i /tmp/vscode.deb; code --install-extension openai.chatgpt`
+
+Note: You will be asked to provide your password in order to install these. 
 
 4. Install dependent python files (pandoc, textutil etc) as listed in the readme.md.  If you choose to not install it initially, the agent installs these for you during the chat and asks permissions to install these files. 
 5. Open VS Code and open the FIRSTDRAFT workspace. You can view all the listed files in the workspace called FIRSTDRAFT.
