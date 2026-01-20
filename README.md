@@ -44,7 +44,7 @@ Step 2: Install the Codex extension after VS Code is installed
 2.Go to Extensions (Ctrl/Cmd+Shift+X)
 3.Search for the extension - Codex
 4.Click Install
-5.You will be prompted to login to ChatGPT using your enterprise ID.
+5.You can connect to Codex now. Most often, you will need to login to ChatGPT, if you havent done so before.  Use your enterprise ID to log in.
 6.Connect and use Codex on Visual Studio code.
 
 When using Codex, you will be prompted to install the relevant Python files. Codex helps you with this.
@@ -80,7 +80,7 @@ To use CDX Writer to create First Drafts:
 5. In VS Code, click the ChatGPT icon on the left-side pane of VS Code. The ChatGPT conversation window opens up.
 6. Converse with Codex (ChatGPT window in VS Code). Prompt the agents, For example, 'Create a first draft using the Writer agent'  or 'Review the 'name of the doc' in the Source folder' or 'Use the @writer.agent or @reviewer.agent to create a first draft for my content that is in the Source folder'.
 Note, that you dont need to copy the system prompts and paste in the chat to use. This is inbuilt and automatically used by the agents.
-7. Once completed, you can view the created First Draft document or the updated docs in the timestamped run folder under `Output/WriterRuns/` or `Output/ReviewerRuns/`. Open the docx format output in MS Word to see the output.  The xml output is provided just as a backup and may not open with the needed Cisco UTF and styles. This xml doc is provided to ideally be used if you plan to reuse (copy+paste) this content in other xml tools.
+7. Once completed, you can view the created First Draft document or the updated docs in the timestamped run folder under `Output/WriterRuns/` or `Output/ReviewerRuns/`. Open the docx format output in MS Word to see the output.  The output also contains the CT XML output files based on the relevant Cisco CT information types.
 
 When you want to create a new First Draft for a different context, you can delete all the documents that you added to the related folders, and include the new ones in the relevant folders and converse with Codex. Each new run will create its own timestamped folder in `Output/WriterRuns/` or `Output/ReviewerRuns/`, preserving history.
 
